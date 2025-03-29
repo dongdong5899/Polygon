@@ -7,13 +7,13 @@ using YH.FSM;
 
 namespace YH.Enemy
 {
-    public class Enemy_6DieState : EntityState
+    public class CombatEnemyDieState : EntityState
     {
-        private Enemy_6 _enemy_6;
+        private CombatEnemy _enemy_6;
         private EntityMover _mover;
-        public Enemy_6DieState(Entity entity, AnimParamSO animParam) : base(entity, animParam)
+        public CombatEnemyDieState(Entity entity, AnimParamSO animParam) : base(entity, animParam)
         {
-            _enemy_6 = entity as Enemy_6;
+            _enemy_6 = entity as CombatEnemy;
             _mover = entity.GetCompo<EntityMover>();
         }
 

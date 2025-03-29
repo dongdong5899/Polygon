@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace YH.Enemy
 {
-    public class Enemy_6 : Enemy
+    public class CombatEnemy : Enemy
     {
         [SerializeField] private CircleCaster2D _defaultAttackCaster;
         [field: SerializeField] public CircleCaster2D secondAttackCaster;

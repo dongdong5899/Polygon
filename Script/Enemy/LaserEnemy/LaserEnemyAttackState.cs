@@ -9,15 +9,15 @@ using YH.FSM;
 
 namespace YH.Enemy
 {
-    public class Enemy_5AttackState : EntityState
+    public class LaserEnemyAttackState : EntityState
     {
-        private Enemy_5 _enemy_5;
+        private LaserEnemy _enemy_5;
         private EntityMover _mover;
         private StatCompo _statCompo;
 
-        public Enemy_5AttackState(Entity entity, AnimParamSO animParam) : base(entity, animParam)
+        public LaserEnemyAttackState(Entity entity, AnimParamSO animParam) : base(entity, animParam)
         {
-            _enemy_5 = entity as Enemy_5;
+            _enemy_5 = entity as LaserEnemy;
             _statCompo = entity.GetCompo<StatCompo>();
             _mover = entity.GetCompo<EntityMover>();
         }

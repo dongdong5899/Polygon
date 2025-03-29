@@ -8,7 +8,7 @@ namespace ObjectPooling
         PlayerProjectile,
         LaserDisplay,
         BombDisplay,
-        Enemy_3,
+        BombEnemy,
         Enemy_4,
         Enemy_5,
         Enemy_6,
@@ -26,6 +26,8 @@ namespace ObjectPooling
         DivisionParentEnemy,
         ChildEnemy,
         Shield,
-        SummonerEnemy
+        SummonerEnemy,
+        StrayBullet,
+        StrayEnemy
     }
 }

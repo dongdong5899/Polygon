@@ -7,9 +7,9 @@ using YH.FSM;
 
 namespace YH.Enemy
 {
-    public class Enemy_7 : Enemy
+    public class HomingEnemy : Enemy
     {
-        [Header("Enemy_7")]
+        [Header("HomingEnemy")]
         [SerializeField] private CircleCaster2D _nearAttackCaster;
         [SerializeField] private float _bulletSpeed;
         [SerializeField] private float _nearAttackRadius;

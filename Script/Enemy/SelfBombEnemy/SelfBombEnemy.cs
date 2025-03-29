@@ -7,7 +7,7 @@ using YH.Players;
 
 namespace YH.Enemy
 {
-    public class Enemy_3 : Enemy
+    public class SelfBombEnemy : Enemy
     {
         [field:SerializeField] public CircleCaster2D defaultAttackCaster;
         [SerializeField] private StatElementSO delayTimeSO;

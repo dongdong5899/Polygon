@@ -6,13 +6,13 @@ using YH.FSM;
 
 namespace YH.Enemy
 {
-    public class Enemy_4AttackState : EntityState
+    public class DefaultEnemyAttackState : EntityState
     {
-        private Enemy_4 _enemy;
+        private DefaultEnemy _enemy;
         private EntityMover _mover;
-        public Enemy_4AttackState(Entity entity, AnimParamSO animParam) : base(entity, animParam)
+        public DefaultEnemyAttackState(Entity entity, AnimParamSO animParam) : base(entity, animParam)
         {
-            _enemy = entity as Enemy_4;
+            _enemy = entity as DefaultEnemy;
             _mover = entity.GetCompo<EntityMover>();
         }
 

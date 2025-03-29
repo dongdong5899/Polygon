@@ -6,7 +6,7 @@ using YH.Entities;
 
 namespace YH.Enemy
 {
-    public class Enemy_5 : Enemy
+    public class LaserEnemy : Enemy
     {
         [SerializeField] private StatElementSO delayTimeSO;
         public StatElement delayTime { get; private set; }

@@ -5,17 +5,16 @@ using YH.FSM;
 
 namespace YH.Enemy
 {
-    public class Enemy_7AttackState : EntityState
+    public class StrayEnemyAttackState : EntityState
     {
-        private Enemy_7 _enemy;
+        private StrayEnemy _enemy;
         private EntityMover _mover;
-
-        public Enemy_7AttackState(Entity entity, AnimParamSO animParam) : base(entity, animParam)
+        public StrayEnemyAttackState(Entity entity, AnimParamSO animParam) : base(entity, animParam)
         {
-            _enemy = entity as Enemy_7;
+            _enemy = entity as StrayEnemy;
             _mover = entity.GetCompo<EntityMover>();
         }
-
+        
         public override void Enter()
         {
             base.Enter();
@@ -50,5 +49,11 @@ namespace YH.Enemy
                 _enemy.ChangeState(_enemy.enemyFSM[FSMState.Chase]);
             }
         }
+
+        public override void Exit()
+        {
+            base.Exit();
+        }
     }
 }
+
