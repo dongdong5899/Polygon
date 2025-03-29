@@ -1,0 +1,31 @@
+namespace ObjectPooling
+{
+    public enum PoolingType
+    {
+        EnemyProjectile,
+        Homing,
+        EnemyLaser,
+        PlayerProjectile,
+        LaserDisplay,
+        BombDisplay,
+        Enemy_3,
+        Enemy_4,
+        Enemy_5,
+        Enemy_6,
+        Enemy_7,
+        PlayerLaser,
+        AreaAttack,
+        DamageText,
+        DropItem,
+        DefaultHitEffect,
+        EnemyDieEffect,
+        AudioPlayer,
+        BurstEnemy,
+        BigBulletEnemy,
+        RollingShotEnemy,
+        DivisionParentEnemy,
+        ChildEnemy,
+        Shield,
+        SummonerEnemy
+    }
+}
